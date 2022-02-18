@@ -1,0 +1,24 @@
+body{
+    font-family: arial,helvetica, sans-serif;
+}
+div{
+    width:  200px;
+    height: 200px;
+    padding: 20px;
+    position: absolute;
+}
+#div1{
+    background: #FC0;
+    top:0px;
+    left:0px;
+}
+#div2{
+    background: #0FC;
+     top:20px;
+    left:20px;
+}
+#div3{
+    background: #AE0;
+     top:70px;
+    left:70px;
+}

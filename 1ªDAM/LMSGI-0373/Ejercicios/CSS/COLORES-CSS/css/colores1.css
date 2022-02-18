@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    color: #666AAA;
+    background-color: aqua
+}
+#sinnada{
+   color: #AAAAAA; 
+}
+#concolor{
+    color: #64A328;
+}
+#marco{
+    z-index: 10;
+    background: #AAAAAA;
+    border-style:double;
+    border-color: #69B;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+}
+#formaNoTextual{
+    z-index: 30;
+    width: 50%;
+    border-width: thick;
+    border-style: dashed;
+    border-color: #A0F;
+    margin-left: auto;
+    margin-top: auto;
+    position: absolute;
+}    
+/*auto debiere centrar el cuadro con la captura pero no lo centra*/
+/* border parece una buena herramienta para entender qué pasa en cada momento con padding y margin */ 

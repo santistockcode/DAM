@@ -1,0 +1,19 @@
+#base{
+    font: bold 5em monospace; 
+    color: rgb(148,50,91);
+    display: inline;
+}
+#destacado{
+    font: bold 10em  sans-serif; 
+    color: rgb(148,50,91);
+    display: inline;
+}
+#otre{
+    font: bold 5em monospace; 
+    color: rgb(148,50,91);
+    display: inline;
+    display:inline-block;
+    
+}
+
+/* el display en este caso me ha servido para meter dos lineas en la misma que la palabra deseo mediante inline-block*/

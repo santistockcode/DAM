@@ -1,0 +1,78 @@
+#torre1{
+    position: relative;
+    background: white;
+    height: 500px;
+    width: 400px;
+    display: inline-block;
+}
+#torre2{
+    position: relative;
+    background: white;
+    height: 500px;
+    width: 400px;
+    display: inline-block;
+}
+#cubo1{
+    width: 100px;
+    height: 100px;
+    background: #00ff00;
+    position: absolute;
+    left: 150px;
+    bottom: 0px; 
+}
+#cubo2{
+    width: 90px;
+    height: 90px;
+    background: aquamarine;
+    position: absolute;
+    left: 155px;
+    bottom: 100px; 
+}
+#cubo3{
+    width: 70px;
+    height: 70px;
+    background: brown;
+    position: absolute;
+    left: 165px;
+    bottom: 190px; 
+}
+#cubo4{
+    width: 50px;
+    height: 50px;
+    background: blue;
+    position: absolute;
+    left: 175px;
+    bottom: 260px; 
+}
+#cubo21{
+    width: 50px;
+    height: 50px;
+    background: blue;
+    position: absolute;
+    left: 175px;
+    bottom: 0px; 
+}
+#cubo22{
+    width: 70px;
+    height: 70px;
+    background: brown;
+    position: absolute;
+    left: 165px;
+    bottom: 50px; 
+}
+#cubo23{
+    width: 90px;
+    height: 90px;
+    background: aquamarine;
+    position: absolute;
+    left: 155px;
+    bottom: 120px; 
+}
+#cubo24{
+    width: 100px;
+    height: 100px;
+    background: #00ff00;
+    position: absolute;
+    left: 150px;
+    bottom: 210px; 
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introducción</title>
+    
+    <!--
+Selectores
+-Selector Universal -> *
+-Tipo ó de etiqueta -> p
+-Class -> .algo
+-Id -> #algo
+-Pseudo-Clases ->:link, :visited,:active, :hover
+-De atributo -> [href]
+-->
+    <style type="text/css">
+        h1 {color:black;}
+        h2 {color:azuredarkorchid;}
+        p {color:beigech;}
+        span { color:aqua;}
+        .subrayado {text-decoration: line-through;}
+        .mayusculas {text-transform: uppercase;}
+        #cambioelcolor {
+            color: #16a085;
+        }
+        a:link {color:aquuamarine;}
+        a:visited{color:coral;}
+        a:hover {font-weight :bold;}
+        a:active{color: brown;}
+        img[alt=logoqueuso]{width: 200px; border-top-left-radius: 50%}
+    </style>
+</head>
+<body>
+<p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. <span>
+Assumenda, in quas consequuntur aperiam non tenetur voluptas nobis at recusandae? </span> 
+Repellat sequi excepturi doloremque id, illo voluptatum quidem dolores ullam laborum!;
+</p>
+<p class="subrayado">ESTO APARECERÁ TACHADO, NO? </p>
+<p class="mayusculas", id ="cambioelcolor">ESTO APARECERÁ en mayúsculas y le hemos cambiado el color con un selector de id </p>
+<img src="img/mac.png" alt="logoqueuso">
+<img src="img/windows.png" alt="">
+<!-- He añadido el tittle logo que uso para que las imagenes del logo de mac aparezcan con el borde redondeado -->
+</body>
+</html>

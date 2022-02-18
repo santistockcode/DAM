@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios ejercicio de examen</title>
+</head>
+<body>
+<form action = "examen.php" method = "get">
+<fieldset>
+    <legend><strong>¿Quién eres?</strong></legend>
+<input type="text" name="Nombre" size="20" maxlength="30" placeholder="nombre" required><br><br>
+<input type="text" name="Apellidos" size="20" maxlength="30" required placeholder="Apellidos"><br><br>
+<input type="number" name="Edad" size="20" maxlength="30" placeholder="Edad" required><br><br>
+<input type="text" name="email" size="20" maxlength="30" placeholder="email" required><br><br>
+<input type="text" name="Telefono de contacto" size="20" maxlength="30" placeholder="Telefono"><br><br>
+</fieldset>
+
+<fieldset>
+    <legend><strong>Aficiones</strong></legend>
+<table border="double">
+    <tr>
+        <td width="300">
+<center><p>Género músical:</p>
+<select name="Género musical" multiple>
+    <option value="Clásica">Clásica</option>
+     <option value="Popular">Música urbana </option>
+     <option value="Tradcional">Folclore y música tradicional</option>
+     <option value="Jass">Jazz y similares</option>
+     <option value="Música contemporánea">Contemporánea</option>
+</select> </center><br>
+        </td>
+       
+        <br>
+        <td width="300"><center>    
+           <p>Deporte:</p>
+<select name="Deporte" multiple >
+    <option value="Bádminton">Bádminton</option>
+     <option value="Tenis">Tenis </option>
+     <option value="Golf">Golf</option>
+     <option value="Frontón">Frontón</option>
+     <option value="Natación ">Natación</option>
+</select> </center><br>
+        </td>
+    <td width="300"><center><p>Género literario</p>
+<select name="Género literario" multiple >
+    <option value="Drama">Drama</option>
+     <option value="Acción">Acción y aventuras </option>
+     <option value="Novela histórica">Novela histórica</option>
+     <option value="Literatura joven">Literatura joven</option>
+     <option value="Ensayo">Ensayo</option>
+</select></center><br>
+  </td>
+   
+    </tr>
+</table>
+<hr>
+<p>Otras aficiones</p>
+<input type="text" name="¿qué te gusta hacer?" size="30" maxlength="30" required placeholder="¿Qué te gusta hacer?"><br><br>
+</fieldset>
+
+<fieldset>
+<legend><strong>Formación</strong></legend>
+<p>Si lo consideras oportuno adjunta a continuación tu curriculum vitae:</p>
+<input type="file" name="adjunto">
+</fieldset>
+<center>
+<input type="image" type="reset" name="reestablecer" src=img/mecachis.png width="50" height ="55"/>
+<input type="image" type="submit" names="enviar"
+src=img/enviar.png width="50" height ="55"/>
+</center>
+</form>  
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio del día Marcas</title>
+</head>
+<body>
+<form action = "preuba.php" method = "get">
+<center><h1>CONTACTO</h1></center> 
+<fieldset>
+<legend>¿Quién eres?</legend>
+    Nombre:<input type="text" name="usuario" size="20" maxlength="30" required>
+    Apellidos:<input type="text" name="usuario" size="20" maxlength="30" required><br><br>
+    Fecha de nacimiento:<input type="text" name="usuario" size="30" maxlength="30" placeholder ="Introduce facha de nacimiento" required>
+</fieldset>
+<fieldset>
+<legend>Dirección</legend>
+<select name="calle">
+     <option value="calle">Calle</option>
+    <option value="paseo">Paseo</option>
+    <option value="plaza">Plaza</option>
+    <option value="carretera">Carretera</option>
+</select><br><br>
+<input type="text" name="numero de puerta" size="20" maxlength="30" placeholder="Numero de puerta/portal" required><br><br>
+<input type="text" name="localidad" size="20" maxlength="30" required placeholder="Localidad"><br><br>
+<input type="text" name="provincia" size="20" maxlength="30" placeholder="Provincia" required><br><br>
+</fieldset>
+
+<fieldset>
+<legend>Contacto</legend>
+<input type="text" name="email" size="20" maxlength="30" placeholder="email" required><br><br>
+<input type="number" name="telefonofijo" size="20" maxlength="30" required placeholder="Telefono fijo"><br><br>
+<input type="number" name="movil" size="20" maxlength="30" placeholder="Teléfono movil" required><br><br>
+URL Redes Sociales: <br><br><input type="text" name="twitter" size="20" maxlength="30" placeholder="twitter" required><br><br>
+<input type="text" name="facebook" size="20" maxlength="30" required placeholder="facebook"><br><br>
+<input type="text" name="otras" size="20" maxlength="30" placeholder="otras" required><br><br>
+</fieldset>
+<br>
+<input type="reset" name="limpiar" value= "Borrar datos del formulario"/>
+<hr>
+<center>
+<input type="image" name="enviar" src="img/check.png" width="40" height ="45" /></center>
+ 
+</form>  
+</body>
+</html>

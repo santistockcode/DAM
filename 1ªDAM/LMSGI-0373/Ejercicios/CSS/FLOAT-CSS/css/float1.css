@@ -1,0 +1,14 @@
+#uno{background: blue;}
+#dos{background: green;}
+#tres{background: purple;}
+#cuatro{background: yellow;}
+
+div{
+    padding: 40px;
+    text-align: center;
+    width: 50%;
+    float: right;
+    
+}
+/* display: flex; parece que ofrece mejor disposición para elementos sueltos y reservo float para texto + imagen*/ 
+

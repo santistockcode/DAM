@@ -1,0 +1,15 @@
+#uno{background: blue;}
+#dos{background: green;}
+#tres{background: purple;}
+#cuatro{background: yellow;}
+
+div{
+    padding: 40px;
+    text-align: center;
+    width: 25%;
+    display: inline-block;
+    
+    
+    
+}
+

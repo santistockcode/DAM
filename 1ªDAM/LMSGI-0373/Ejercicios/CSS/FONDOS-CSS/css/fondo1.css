@@ -1,0 +1,5 @@
+body{
+    background-image:url(../img/googlebrackets.png);
+    background-position: 500px 100px;
+    /*La posición desplaza la imagen y la repite*/
+}

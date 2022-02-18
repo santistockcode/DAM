@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+    color: #666AAA;
+    background-color: aqua
+}
+body{
+    background-color: #098092;
+}
+#marco{
+    z-index: 10;
+    background: #AAAAAA;
+    border-style:double;
+    border-color: #69B;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+}
+

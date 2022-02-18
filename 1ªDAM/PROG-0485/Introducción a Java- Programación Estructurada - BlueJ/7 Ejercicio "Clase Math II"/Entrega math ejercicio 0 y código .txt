@@ -1,0 +1,357 @@
+0. Averigua los métodos de la clase Math de Java.
+
+Los métodos están especificados en la documentación oficial de oracle: 
+
+https://docs.oracle.com/javase/8/docs/api/java/lang/Math.html
+
+En el link se especifican los parámetros que admite el método así como lo que devuelve. En vez de redactar un copy-paste, voy a ir añadiendo los que aparezcan en los ejercicios aquí (después de buscar en el link) e intentar redactar con mis palabras lo que hacen y el ejemplo concreto. 
+
+round —>
+public static int round(float a)
+parámetro: floating-point value
+devuelve: el valor del argumento redondeado al int más cercano
+(lo mismo para public static long round(double a)
+
+Aparece en: ejercicios 1,2,6,9
+
+pow —>
+public static double pow (double a, double b)
+parámetros: 
+	a- la base
+	b- el exponente
+devuelve: el valor de a elevado a b
+
+Aparece en: ejercicios 3,4
+
+sqrt —>
+public static double sqrt(double a)
+parámetros: un valor cuya raíz cuadrada se quiere calcular
+devuelve: La raíz cuadrada positiva del valor.
+(nota NaN es “not a number”, esto es, sqrt de un valor neg o Nan)
+
+Aparece en: ejercicio 4,
+
+random—>
+public static double random()
+parámetros: es en sí una función asociada a un generador de números pseudorandom (hay varios grados de aleatoriedad al parecer). Cómo nota decir que el número estará e n t r e 0.0 y 1.0
+devuelve: Sabiendo en qué rango está el pseudorandom se puede usar para obtener en un rango determinado con una sencilla multiplicación
+
+Aparece en: ejercicio 8,
+
+
+1.
+/*
+ * 1. Calcula la cantidad de euros que tienen 3 amigos, si Paco tiene N (este valor lo pediremos al usuario),
+Bartolo tiene la mitad que Paco, y Lucía tiene la mitad de lo que tiene Paco y Bartolo juntos.
+ */
+import java.util.Scanner;
+import java.text.DecimalFormat;
+public class Ejercicio1
+{
+public static void main(String args[]){
+    float nPaco;
+    Scanner dime = new Scanner(System.in);
+    System.out.println("¿Cuántos euros tiene Paco?");
+    nPaco = dime.nextFloat();
+    float nBartolo = nPaco / 2;
+    float nLucia = (nPaco + nBartolo) / 2;
+    /* Como n Lucía puede salir con muchos decimales y la unidad menor son los céntimos:
+    nLucia = Math.round(nLucia); Pero queremos dos decimales.
+    Para un double podemos usar round, pero para un float he encontrado en internet
+    esta solución de dar formato*/
+    DecimalFormat solucion_formato = new DecimalFormat("#.00");
+    //System.out.println(solucion_formato.format(nLucia)); (internet)
+    System.out.println("Bartolo tiene " + solucion_formato.format(nBartolo) + " € y Lucía " + solucion_formato.format(nLucia) + " €");
+}
+}
+
+2.
+
+/**
+ * 2. Una compañía de venta de coches le paga a sus empleados 1000 € mensuales, además de una comisión
+de 50 € por vehículo vendido, más el 5 % del valor total del vehículo vendido. Hacer un programa que calcule
+e imprima el salario mensual de un vendedor.
+ * Los datos que introduce el usuario son: número de coches vendidos (es decir ir metiendo coches hasta que pulses algo)
+ * y de cada coche calcular el 5% y sumarlo.Puedo preguntar los coches 
+ * vendidos quiero tener un sumatorio de las comisiones por coche quiero tener un valor final que añada los 1000 euros de sueldo base.
+   */
+import java.util.Scanner;
+public class Ejercicio2
+{
+    public static void main(String[] args){
+    Scanner dime = new Scanner(System.in);
+    //declaro las variables necesarias
+    int n, c; 
+    double sumatorioporc, comisiontotal, sueldofinal, sueldoparcial; 
+    System.out.println("--------");
+    System.out.println("¿Cuantos coches ha vendido el vendedor en cuestión?");
+    n = dime.nextInt();
+    System.out.println("--------");
+    System.out.print("Introduce el valor del coche número 1: ");
+    sueldoparcial = dime.nextDouble()* 0.05;   
+    comisiontotal = n * 50;
+    sueldofinal = sueldoparcial;
+    for (c = 1; c < n; c++){
+    System.out.print("Introduce el valor del coche número " + (c+1) + " : ");
+    sueldoparcial = dime.nextDouble() * 0.05;
+    sueldofinal = sueldofinal + sueldoparcial;
+}  
+    sueldoparcial = Math.round(sueldoparcial*100.0)/100.0;
+    /*Al ser dinero, esta es la solución que he encontrado en internet para 
+    sacar el double con dos decimales */
+    System.out.print("El sueldo del vendedor es " + (1000 + comisiontotal + sueldofinal) + " €");
+}
+}
+
+3.
+
+/**
+ * 3. Hacer un programa que calcule (a + b)
+ * A + b todo ello al cuadrado
+ * idealmente trabajo solo con las variables  a, b y resultado final.
+ *  
+ */
+import java.util.Scanner;
+public class Ejercicio3
+{
+    public static void main (String args[]){
+    Scanner dime = new Scanner(System.in);
+    double a, b, resultado;
+    System.out.println("Calculadora de (a + b) al cuadrado");
+    System.out.println("Introduce un número a");
+    a = dime.nextDouble();
+    System.out.println("Introduce un número b");
+    b = dime.nextDouble();
+    resultado = Math.pow(a, 2) + (2*a*b) + Math.pow (b, 2);
+    System.out.println("El resultado es " + resultado);
+}
+}
+
+4.
+
+/**
+ * 4. Hacer un programa que calcule ax
+2+bx+c=0.
+ * Para esto hay una formula que obtiene dos soluciones o hay posibilidad de que no hay soluciones
+ * @version (a version number or a date)
+ */
+import java.util.Scanner;
+public class Ejercicio4
+{
+    public static void main (String args[]){
+    Scanner dime = new Scanner(System.in);
+    double a, b, c, resultadoa, resultadob;
+    System.out.println("Calculadora ax^2+bx+c=0");
+    System.out.println("Introduce un número a");
+    a = dime.nextDouble();
+    System.out.println("Introduce un número b");
+    b = dime.nextDouble();
+    System.out.println("Introduce un número c");
+    c = dime.nextDouble();
+    //resultadoa = ((-b + Math.sqrt((b*b)-(4*a*c))) / (2*a));
+    //hay una opcion que es esta funcion no tiene soluciones reales y otra que la segunda parte del numerador es 0, de ahí el if
+    if (((b*b)-4*a*c) > 0){
+    resultadob = Math.sqrt((b*b)-4*a*c);
+    resultadob = -b - resultadob;
+    resultadob = resultadob/(2*a);
+    //al principio lo metí todo en una línea pero se veía muy mal
+    resultadoa = Math.sqrt((b*b)-4*a*c);
+    resultadoa = -b + resultadoa;
+    resultadoa = resultadoa/(2*a);
+    System.out.println("Para los valores " + a + ", " + b + " y " + c +
+    ", las posibles soluciones son " +  resultadoa + " y " + resultadob);
+    }else if (((b*b)-4*a*c) == 0){
+    resultadoa = -b;
+    resultadoa = resultadoa/(2*a);
+    System.out.println("La solución es " + resultadoa);
+    }else{ 
+    System.out.println("No tiene solución");
+}
+} 
+}
+
+5.
+/*
+ * 5. Hacer un programa que pide 20 números y nos calcule la suma y la media de los valores introducidos.
+ */
+import java.util.Scanner;
+public class Ejercicio5
+{
+    public static void main (String[] args){
+    Scanner dime = new Scanner(System.in);
+    // declaro las variables
+    double media, num, sumatorio;
+    int c; //c de contador
+System.out.print("Introduce 20 números. Los sumaré y te diré la media: \n");
+    num = dime.nextDouble();   
+    sumatorio = num;
+    for (c = 1; c < 20; c++){
+    System.out.print("Siguiente: \n");
+    num = dime.nextDouble();
+    sumatorio = sumatorio + num;
+}  
+media = sumatorio / 20;
+System.out.print("Suman " + sumatorio + " y la media es " + media);
+}
+}
+
+6.
+/*
+ * 6. Hacer un programa que pida por pantalla 3 notas, calcule su media y lo redondee.
+ */
+import java.util.Scanner;
+public class Ejercicio6
+{
+public static void main (String[] args){
+    Scanner dime = new Scanner(System.in);
+    // declaro las variables
+    double media, num, sumatorio;
+    int c; //c de contador
+System.out.print("Introduce 3 números para saber su media: \n");
+    num = dime.nextDouble();   
+    sumatorio = num;
+    for (c = 1; c < 3; c++){
+    System.out.print("Siguiente: \n");
+    num = dime.nextDouble();
+    sumatorio = sumatorio + num;
+}  
+media = sumatorio / 3;
+media = Math.round(media);
+System.out.print("Su media es " + media);
+}}
+
+7.
+/*
+ * 7. Hacer un programa que pida hasta 5 veces un número al usuario y que lo compare con un número secreto
+que hemos declarado internamente. El programa termina mostrando por pantalla “has acertado en X intentos”,
+o bien “has perdido” dependiendo si lo ha acertado o no.
+ */
+import java.util.Scanner;
+public class Ejercicio7
+{
+    // si algo ha cambiado a true
+public static void main (String[] args){
+    Scanner dime = new Scanner(System.in);
+    // declaro las variables
+    int num, numsecreto;
+    int c; //c de contador
+    boolean quesera;
+    numsecreto = 13;
+    System.out.print("Intenta acertar un número en un máximo de 5 intentos: \n");
+    num = dime.nextInt();   
+    quesera = false;
+    //if (num == numsecreto){quesera = true}, pero me gusta más con ?;
+    quesera = (num == numsecreto) ? true : false;
+    for (c = 1; c < 5 && quesera == false; c++){
+    System.out.print("Siguiente: \n");
+    num = dime.nextInt();
+    quesera = (num == numsecreto) ? true : false;
+    //if (num == 13){quesera = true;};
+}
+if (quesera == true){
+System.out.println("Acertaste en tan solo " + c + " intentos");
+}else{ System.out.println("Se consumieron los 5 intentos, ya lo siento");
+}
+}
+}
+
+8.
+/*
+ * 8. Mejora el programa anterior haciendo que el número se genere de forma automática.
+ */
+import java.util.Scanner;
+public class Ejercicio8
+{
+    // lo que cambia aquí es donde ponemos el bucle, lo va a pedir 5 veces ó que acierte
+    // si algo ha cambiado a true
+public static void main (String[] args){
+    Scanner dime = new Scanner(System.in);
+    // declaro las variables
+    int num, numsecreto;
+    int c; //c de contador
+    boolean quesera;
+    double numerico;
+    numerico = Math.random()*10;
+    //System.out.println("numerico:"+ numerico);
+    numsecreto = (int) Math.round(numerico); //de internet, redondear a entero
+    //System.out.println("numsecreto:"+ numsecreto);
+    System.out.print("Intenta acertar un número del 0 al 10 en un máximo de 5 intentos: \n");
+    num = dime.nextInt();   
+    quesera = false;
+    //if (num == numsecreto){quesera = true}, pero me gusta más con ?;
+    quesera = (num == numsecreto) ? true : false;
+    for (c = 1; c < 5 && quesera == false; c++){
+    System.out.print("Siguiente: \n");
+    num = dime.nextInt();
+    quesera = (num == numsecreto) ? true : false;
+    //if (num == 13){quesera = true;};
+}
+if (quesera == true){
+System.out.println("Acertaste en tan solo " + c + " intentos");
+}else{ System.out.println("Se consumieron los 5 intentos, lo siento");
+}
+}
+}
+
+9.
+
+/*
+ * 9. Mejorar el programa al ejercicio 6, para que muestre su valor en “literal”, es decir:
+Mostrará:
+“muy deficiente” si el valor es 0, 1 ó 2
+“deficiente” si el valor es 3 ó 4.
+“suficiente” si el valor es 5.
+“bien” si el valor es 6.
+“notable” si el valor es 7 ó 8.
+“sobresaliente” si el valor es 9.
+“LA REOSTIA” si el valor es 10.
+ */
+import java.util.Scanner;
+public class Ejercicio9
+{
+public static void main (String[] args){
+    Scanner dime = new Scanner(System.in);
+    // declaro las variables
+    double media, num, sumatorio;
+    int c; //c de contador
+System.out.print("Introduce 3 números para saber su media: \n");
+    num = dime.nextDouble();   
+    sumatorio = num;
+    for (c = 1; c < 3; c++){
+    System.out.print("Siguiente: \n");
+    num = dime.nextDouble();
+    sumatorio = sumatorio + num;
+}  
+media = sumatorio / 3;
+media = Math.round(media);
+int m = (int)media;
+switch(m)
+{
+    case 0: System.out.println("Muy deficiente"); break;
+    case 1: System.out.println("Muy deficiente"); break;
+    case 2: System.out.println("Muy deficiente"); break;
+    case 3: System.out.println("Deficiente"); break;
+    case 4: System.out.println("Deficiente"); break;
+    case 5: System.out.println("Suficiente"); break;
+    case 6: System.out.println("Bien"); break;
+    case 7: System.out.println("Notable"); break;
+    case 8: System.out.println("Notable"); break;
+    case 9: System.out.println("Sobresaliente"); break;
+    case 10: System.out.println("Sobresaliente"); break;      
+}
+}
+}
+
+
+
+
+
+
+
+
+	
+
+
+
+
+

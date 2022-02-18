@@ -1,0 +1,10 @@
+div{
+    width: 200px;
+    height: 200px;
+    background: #CCC;
+    background-color: azure
+}
+#dos{
+       display: list-item;
+}
+/* se supone que lo trata como un elemento de una lista, aunque no tengo clara su aplicación*/

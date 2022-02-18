@@ -1,0 +1,7 @@
+div{
+    width: 200px;
+    height: 200px;
+    background: #CCC;
+    display: run-in;
+}
+/*pasa a integrarse en "lo que sigue" sea esto block o inline pero de nuevo no sé seguro como se aplica */

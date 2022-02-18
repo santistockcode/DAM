@@ -1,0 +1,81 @@
+#padre{
+    position: relative;
+    background: rgb(174,254,212);
+    height: 500px;
+    width: 800px;
+}
+#rueda3{ width: 50px;
+    height: 50px;
+    background: rgb(218,0,0);
+    left: 575px;
+    bottom: 25px; 
+    position:absolute;
+}
+#rueda2{    width: 50px;
+    height: 50px;
+    background: rgb(218,0,0);
+    left: 300px;
+    bottom: 25px; 
+position:absolute;}
+#rueda1{    
+    width: 50px;
+    height: 50px;
+    background: rgb(218,0,0);
+    left: 150px;
+    bottom: 25px;
+    position:absolute;
+}
+#junta{    width: 100px;
+    height: 20px;
+    background: rgb(1,0,0);
+    left: 400px;
+    bottom: 50px; 
+position:absolute;}
+#humo4{    width: 20px;
+    height: 20px;
+    background: rgb(127,126,126);
+    left: 590px;
+    bottom: 410px; 
+position:absolute;}
+#humo3{    width: 20px;
+    height: 20px;
+    background: rgb(127,126,126);
+    left: 590px;
+    bottom: 440px; 
+position:absolute;}
+#humo2{    width: 20px;
+    height: 20px;
+    background: rgb(127,126,126);
+    left: 560px;
+    bottom: 440px; 
+position:absolute;}
+#humo1{    width: 20px;
+    height: 20px;
+    background: rgb(127,126,126);
+    left: 530px;
+    bottom: 440px; 
+position:absolute;}
+#vagon2{    width: 200px;
+    height: 200px;
+    background: rgb(238,191,201);
+    left: 500px;
+    bottom: 50px; 
+position:absolute;}
+#vagon{    width: 300px;
+    height: 200px;
+    background: rgb(238,191,201);
+    left: 100px;
+    bottom: 50px; 
+position:absolute;}
+#cabina{    width: 150px;
+    height: 150px;
+    background: rgb(72,127,30);
+    left: 525px;
+    bottom: 250px;
+position:absolute;}
+#faro{    width: 10px;
+    height: 30px;
+    background: rgb(254,255,59);
+    left: 700px;
+    bottom: 135px; 
+position:absolute;}

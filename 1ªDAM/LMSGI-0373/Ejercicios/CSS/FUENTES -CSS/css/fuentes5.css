@@ -1,0 +1,16 @@
+#letra{
+
+    font: bold 1em monospace; 
+    color: rgb(148,50,91);
+    display: inline;
+    display:inline-block;  
+} 
+
+#acordes{
+    font-family: "XPTChords";
+}
+
+@font-face{
+  font-family: "Font Name";
+  src: url("//fuentes/XPTChords.ttf") format("truetype");
+}

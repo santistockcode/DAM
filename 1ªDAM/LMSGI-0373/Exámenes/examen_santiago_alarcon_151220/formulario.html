@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios ejercicio de examen</title>
+</head>
+<body>
+<form action = "examen.php" method = "get">
+<fieldset>
+    <legend><strong>¿Quién eres?</strong></legend>
+<input type="text" name="Nombre" size="20" maxlength="30" placeholder="nombre" required><br><br>
+<input type="text" name="Apellidos" size="20" maxlength="30" required placeholder="Apellidos" required><br><br>
+<input type="text" name="email" size="20" maxlength="30" placeholder="email" required><br><br>
+<input type="number" name="Telefono de contacto" size="30" maxlength="30" required placeholder="Telefono"><br><br>
+</fieldset>
+
+<fieldset>
+    <legend><strong>Formación Académica</strong></legend>
+<p>Nivel de estudios:</p>
+<select name="---">
+    <option value="ESO">ESO</option>
+     <option value="FPGM">Formación Profesional Grado Medio</option>
+     <option value="FPGS">Formación Profesional Grado Superior</option>
+     <option value="GRADO">GRADO</option>
+     <option value="P/M">Postgrado/Master</option>
+</select>
+<br>
+<br> Idiomas: <br><br> <input type="checkbox" name="idiomas" value="Castellano">Castellano<br>
+<input type="checkbox" name="idiomas" value="Ingles">Inglés<br><input type="checkbox" name="idiomas" value="Frances">Francés<br><input type="checkbox" name="idiomas" value="Chino">Chino<br><input type="checkbox" name="idiomas" value="Aleman">Alemán<br><input type="checkbox" name="idiomas" value="Euskera">Euskera<br><input type="checkbox" name="idiomas" value="Catalan">Catalán<br><input type="checkbox" name="idiomas" value="Gallego">Gallego<br><input type="checkbox" name="idiomas" value="Valenciano">Valenciano<br>
+<input type="checkbox" name="idiomas" value="Valenciano"><input type="text" name="Otrosidiomas" size="30" maxlength="30" placeholder="Otros"><br>
+</fieldset>
+
+<fieldset>
+<legend><strong>Otra formación, Anexos (otros cursos de interés...)</strong></legend>
+<p>Por favor, adjunta a continuación la documentación que creas oportuna para la justificación de esta u otra formación que quieras presentar:</p>
+<input type="file" name="adjunto">
+</fieldset>
+<center>
+<input type="image" type="reset" name="reestablecer" src=img/mecachis.png width="50" height ="55"/>
+<input type="image" type="submit" names="enviar"
+src=img/enviar.png width="50" height ="55"/>
+</center>
+</form>  
+</body>
+</html>

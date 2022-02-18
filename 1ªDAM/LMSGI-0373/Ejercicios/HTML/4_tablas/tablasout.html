@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Esto lo he sacado de w3schools.com-->
+  <!-- define unos atributos al principio para
+  usarlos en todos los elementos del documento-->
+   <style>
+table, th, td {
+    border: 1px solid black;
+  border-collapse: collapse;
+    text-align: center;
+    empty-cells: show;
+}
+.noborders td {
+        border:0;
+    }
+       
+<!-- esto lo he sacado de internet y no encuentro una
+ solución mejor-->
+       
+</style>
+    <meta charset="UTF-8">
+    <title>casillas3</title>
+</head>
+<body>
+    <table style="width:100%">
+       <tr class="bordertd">
+        <td>Lunes</td>
+        <td>Martes</td>
+        <td>Miércoles</td>
+        <td>Jueves</td>
+        <td>Viernes</td>
+    </tr>
+    <tr>
+        <td>Mates</td>
+        <td rowspan = "2" colspan = "3">jaja</td>
+        <td rowspan = "3">Historia</td>
+    </tr>
+    <tr class="noborders">
+         <td rowspan="0">jajax</td> 
+         <td height="20", width ="0"></td>
+    </tr>
+    <tr>
+        <td>x</td>
+        <td>x</td>
+        <td>x</td>  
+    </tr>
+    <tr>
+        <td>x</td>
+        <td>x</td>
+        <td>x</td>
+        <td>x</td>
+    </tr></table>
+</body>
+</html>

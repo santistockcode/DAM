@@ -1,0 +1,6 @@
+body{
+    background-image:url(../img/brackets.png);
+    background-position: 50% 10%;
+    /* la posición lo trabaja sobre la imagen y una vez lo mete en la página ahí queda a disposiión del texto que se introduzca
+    */
+}

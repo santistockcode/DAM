@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multimedia</title>
+    <link rel="stylesheet" href="css/multimedia.css">
+</head>
+<body>
+   <h1>MULTIMEDIA</h1>
+
+   <center>
+      <h1>VIDEOS</h1>
+   <video controls width="400" height="210" autoplay muted>
+<!-- autoplay
+      empiece automaticamente-->
+<!--controls
+        muestra los controles del video-->
+       <source src="vid/mano.mp4" type='video/mp4; codecs="avc1.4d002a, mp4a.40.2"'>
+       <track default src="nenu.vtt">
+   </video>
+   </center>
+   
+   <center>
+   <video preload="metadata" controls loop width="384" height="216"muted>
+       <source src="vid/playa.mp4" type='video/mp4; codecs="avc1.4d002a, mp4a.40.2"'>
+   </video>
+   </center>
+<!-- preload
+      puede ser none, metadata (solo un poco del video) y auto-->
+   
+   <center>
+
+   <video controls width="160" height="160" autoplay muted>
+       <source src="vid/tasty.mp4" type='video/mp4; codecs="avc1.4d002a, mp4a.40.2"'>
+   </video>
+   <hr>
+   <h1>SONIDOS RAROS</h1>
+    <!-- este no es de libre uso pero quería ver lo del sonido-->
+<audio loop autoplay controls width="2000">
+   No, tu navegador no puede reproducir este audio <!-- si el navegador no puede con el audio mostrará este mensaje-->
+    <source src="audio/silly_bus.mp3">
+       <!-- para mp3 usamos audio/mpeg-->
+       </audio>
+       <br>
+<audio autoplay loop muted controls> 
+  <source src="audio/bbc_pajarillos.mp3">
+   </audio>
+
+   
+   </center>
+</body>
+</body>
+</html>

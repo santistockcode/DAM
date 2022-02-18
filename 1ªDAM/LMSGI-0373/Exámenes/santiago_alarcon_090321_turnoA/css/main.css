@@ -1,0 +1,177 @@
+
+@font-face{
+	font-family: "poppins";
+	src:url(../fuentes/Poppins-ExtraLight.ttf);
+}
+
+/* naranja- rgb(223,93,62) 
+* marrón - rgb(167,157,137)
+* fucsia - rgb(220,192,200)
+Y EL FONDO 
+*/
+#porterminar {
+ background-image: url("../img/construccion.png");
+ background-color: rgb(187,184,210) ;
+}
+
+.cabecera{
+	background-color: rgb(220,192,200);
+	border-radius: 10px;
+	height: 100px;
+	width: 95%;
+	margin: 0 auto;
+	position: relative;
+	align-items: center;
+}
+.cabecera__logo{
+	display:inline-block;
+	margin-left: .6em;
+	position: absolute;
+	top:50%;
+	margin-top: -35px;
+	}
+.cabecera__titulo{
+		text-shadow: 0.03em 0.03em 0px rgb(223,93,62);
+		transform: scale(1, 1.5);
+	   	 -webkit-transform: scale(1, 1.5);
+	   	 -moz-transform: scale(1, 1.5);
+	   	 -o-transform: scale(1, 1.5);
+	   	 -ms-transform: scale(1, 1.5);
+	   	 font-family: 'poppins';
+	   	 font-size: 1.5em;
+	   	 margin-left: 3em;
+	   	 overflow: hidden; /* que si se minimiza se oculte */
+	   	 position: absolute;
+	   	 top:50%;
+	   	 margin-top: -25px;
+}
+.menu{
+	font-family: 'poppins';
+	text-transform: uppercase;
+	display: grid;
+	margin: 0 auto;
+	margin-top:2px;
+	grid-template-columns: repeat(5, 1fr); /*solo funciona con las fracciones*/
+	width: 95%;
+	grid-gap: 2px;
+	position: relative;
+	
+}
+	.menu__pestanya{
+	background-color: rgb(220,192,200);
+	border-radius: 10px;
+	height: 30px;
+	padding: 5px;
+  	text-align: center;
+  	border-radius: 10px;
+	position:relative;
+	}
+			.menu__pestanya--estatica {
+				position: fixed;
+			}
+
+.espacioprincipal{
+	max-width: auto;
+	margin:0 auto;
+	width:95%;
+
+}
+.galeria {	
+display: grid;
+margin-top:40px;
+position: absolute;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 2;
+grid-gap: 10px;
+position: relative;
+width: 95%;
+margin: 0 auto;
+}
+.galeria__cromo{
+position: relative;
+text-align: center;
+background: linear-gradient(orange,rgb(167,157,137));
+margin-top:40px;
+margin-bottom: 40px;
+}
+div.galeria__cromo img{
+	position: relative;
+	float: top;
+	width: 100px;
+	height: auto;
+}
+div.galeria__cromo img:hover {
+  border: 1px solid #777;
+ }
+div.piedp {
+  padding: 15px;
+  text-align: center;
+}
+		.espacioprincipal__cromo--movil{
+		}
+	.espacioprincipal__mapa{
+		}
+	.espacioprincipal__horario{
+		
+		border-color: brown;
+		font-size:;
+		margin: 0 auto;
+		margin-top:30px;
+		width: 95%;
+		position: relative;
+		text-align: center;
+		font-family: 'poppins';
+		margin-bottom: 40px;
+		} 
+	div.espacioprincipal__horario tr{
+		background-color: rgb(223,93,62);
+	}
+		
+	.espacioprincipal__campoformulario{
+	}
+	.espacioprincipal__botonesformulario{ /*he rellenado este como ejemplo */
+		background:;
+		color:;
+		text-decoration: none;
+		padding: .5em 1em;
+		border-radiuus: .5em;
+		display: inline;
+		margin-top: .5em;
+		}
+		.espacioprincipal__botonesformulario:hover{
+		rgb(200,200,200); /* esto es para que al pasar por encima el raton cambi de colro y sepamos que es un botón*/
+		}
+	.espacioprincipal__senyalado{
+			  background: linear-gradient(rgb(167,157,137),white);
+			  text-align: left;
+			padding: .6em 9em; /*esto es para que el colorcito llegue al borde*/
+			margin-left: -50px;
+			margin-right: -50px;
+	}
+	
+.footer{
+		display: inline-block;
+		font-family: 'poppins';
+		display:inline-flex;
+		position: absolute;
+		align-content: center;
+		margin-top: 20px;
+			}
+	div.footer p{
+		margin-left: 30px;
+		position: relative;
+		text-align: left;
+		font-size: .6em;
+	}
+	div.footer img{
+		width: 30%;
+		margin-left: 50px;
+		display:inline-flex;
+		position:relative;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+		

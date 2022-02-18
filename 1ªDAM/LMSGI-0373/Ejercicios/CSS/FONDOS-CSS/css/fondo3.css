@@ -1,0 +1,5 @@
+body{
+    background-image:url(../img/literalbrackets.png);
+    background-repeat: repeat;
+    /*repeat lo que hace es que lo repite en el eje que queramos, pero toma realmente ese eje al margen del tamaño de la ventana del navegador*/
+}

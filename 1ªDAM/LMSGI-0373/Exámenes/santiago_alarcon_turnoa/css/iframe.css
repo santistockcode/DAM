@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    color: #AABAAA;
+    background-color: #1188FF;
+}
+iframe {
+    border-style: dotted;
+    /* esto lo he sacado de w3*/
+    margin-bottom: 100px;
+    position: relative;
+    display: inline-block;
+}
+footer{
+    font: bold uppercase 4em helvetica sans-serif; 
+    color: #119911;
+    background-color: azure;
+    margin-top: 100px;
+    text-align: right;
+}
+body{
+    background-color: antiquewhite;
+}

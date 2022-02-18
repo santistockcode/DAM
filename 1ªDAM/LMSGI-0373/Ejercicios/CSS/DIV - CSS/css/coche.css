@@ -1,0 +1,52 @@
+#padre{
+    position: relative;
+    background: rgb(174,254,212);
+    height: 500px;
+    width: 800px;
+}
+#rueda2{    width: 50px;
+    height: 50px;
+    background: rgb(219,0,0);
+    left: 275px;
+    bottom: 25px; 
+position:absolute;}
+#rueda1{    width: 50px;
+    height: 50px;
+    background: rgb(219,0,0);
+    left: 475px;
+    bottom: 25px; 
+position:absolute;}
+#faro{    width: 20px;
+    height: 50px;
+    background: rgb(254,255,59);
+    left: 600px;
+    bottom: 50px; 
+position:absolute;}
+#asientod{    width: 98px;
+    height: 98px;
+    background: rgb(174,254,212);
+    border-style: solid;
+    border-width: 2px;
+    left: 398px;
+    bottom: 148px; 
+position:absolute;
+}
+#asientot{    width: 100px;
+    height: 100px;
+    background: rgb(0,0,0);
+    left: 300px;
+    bottom: 150px; 
+position:absolute;}
+#chasis{    width: 400px;
+    height: 100px;
+    background: rgb(72,127,30);
+    left: 200px;
+    bottom: 50px; 
+position:absolute;}
+#tubo{    width: 50px;
+    height: 20px;
+    background: rgb(0,0,0);
+    left: 150px;
+    bottom: 50px; 
+position:absolute;}
+

@@ -1,0 +1,31 @@
+body{
+    font-family: arial, helvetica, sans-serif;
+    padding-bottom: 800px;
+}
+#padre{
+    width: 700px;
+    height: 400px;
+    border: 40px solid #0CC;
+    margin: 20px auto;
+    padding:  20px;
+    position: relative;
+}
+#hijo{
+    text-align: center;
+    padding: 50px;
+    background: rgba(128,128,128,0.5);
+    font-size: 2em;
+    position: relative;
+    top: 400px;
+    left: 100px;
+}
+#fija{
+    text-align: center;
+    padding: 50px;
+    background: rgba(220,128,128, 0.5);
+    font-size: 2em;
+    position: fixed;
+    top: 200px;
+    right: 900px;
+
+}

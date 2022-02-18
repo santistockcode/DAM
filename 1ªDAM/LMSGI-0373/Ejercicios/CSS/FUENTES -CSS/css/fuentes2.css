@@ -1,0 +1,16 @@
+#vod{
+    font-size: 1em;
+    font-weight: bolder;
+    font-style: oblique;
+    font-variant: normal;
+    line-height:100px;
+    /* line-height dice lo separadas que están unas líneas de otras*/
+}
+#averaver{
+    font-family: "XPTMusic";
+}
+
+@font-face{
+  font-family: "Font Name";
+  src: url("//fuentes/XPTMusic.ttf") format("truetype");
+}
