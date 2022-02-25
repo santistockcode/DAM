@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">pec3_SAS</string>
+    <string name="rating_count">%1$0 likes</string>
+    <string name="go_back">Go back and continue rating places</string>
+    <string name="top_five_title">Top Five</string>
+    <string name="places_app_title">Places I\'ve Been</string>
+    <string name="eurorate">"\: one point"</string>
+</resources>
