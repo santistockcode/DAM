@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgendaContactosXamarinSJ.MainPage">
+    <StackLayout Margin="10,35,10,10">
+        <StackLayout HorizontalOptions="Center">
+    <Label Text="Acerca de"
+           FontSize="24" />
+    <Editor IsReadOnly="True"
+        Text= "Aplicación realizada por Javier y Santiago para la asignatura Programación Multimedia y Dispositivos Móviles."
+            >
+    </Editor>
+</StackLayout>
+    </StackLayout>
+</ContentPage>

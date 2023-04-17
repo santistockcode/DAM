@@ -1,0 +1,15 @@
+/Users/santi/Projects/JuegoMemoria_SAS/JuegoMemoria_SAS/JuegoMemoria_SAS/bin/Debug/netstandard2.0/JuegoMemoria_SAS.deps.json
+/Users/santi/Projects/JuegoMemoria_SAS/JuegoMemoria_SAS/JuegoMemoria_SAS/bin/Debug/netstandard2.0/JuegoMemoria_SAS.dll
+/Users/santi/Projects/JuegoMemoria_SAS/JuegoMemoria_SAS/JuegoMemoria_SAS/bin/Debug/netstandard2.0/ref/JuegoMemoria_SAS.dll
+/Users/santi/Projects/JuegoMemoria_SAS/JuegoMemoria_SAS/JuegoMemoria_SAS/bin/Debug/netstandard2.0/JuegoMemoria_SAS.pdb
+/Users/santi/Projects/JuegoMemoria_SAS/JuegoMemoria_SAS/JuegoMemoria_SAS/obj/Debug/netstandard2.0/JuegoMemoria_SAS.csproj.AssemblyReference.cache
+/Users/santi/Projects/JuegoMemoria_SAS/JuegoMemoria_SAS/JuegoMemoria_SAS/obj/Debug/netstandard2.0/JuegoMemoria_SAS.GeneratedMSBuildEditorConfig.editorconfig
+/Users/santi/Projects/JuegoMemoria_SAS/JuegoMemoria_SAS/JuegoMemoria_SAS/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/santi/Projects/JuegoMemoria_SAS/JuegoMemoria_SAS/JuegoMemoria_SAS/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/santi/Projects/JuegoMemoria_SAS/JuegoMemoria_SAS/JuegoMemoria_SAS/obj/Debug/netstandard2.0/JuegoMemoria_SAS.AssemblyInfoInputs.cache
+/Users/santi/Projects/JuegoMemoria_SAS/JuegoMemoria_SAS/JuegoMemoria_SAS/obj/Debug/netstandard2.0/JuegoMemoria_SAS.AssemblyInfo.cs
+/Users/santi/Projects/JuegoMemoria_SAS/JuegoMemoria_SAS/JuegoMemoria_SAS/obj/Debug/netstandard2.0/JuegoMemoria_SAS.csproj.CoreCompileInputs.cache
+/Users/santi/Projects/JuegoMemoria_SAS/JuegoMemoria_SAS/JuegoMemoria_SAS/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/santi/Projects/JuegoMemoria_SAS/JuegoMemoria_SAS/JuegoMemoria_SAS/obj/Debug/netstandard2.0/JuegoMemoria_SAS.dll
+/Users/santi/Projects/JuegoMemoria_SAS/JuegoMemoria_SAS/JuegoMemoria_SAS/obj/Debug/netstandard2.0/ref/JuegoMemoria_SAS.dll
+/Users/santi/Projects/JuegoMemoria_SAS/JuegoMemoria_SAS/JuegoMemoria_SAS/obj/Debug/netstandard2.0/JuegoMemoria_SAS.pdb

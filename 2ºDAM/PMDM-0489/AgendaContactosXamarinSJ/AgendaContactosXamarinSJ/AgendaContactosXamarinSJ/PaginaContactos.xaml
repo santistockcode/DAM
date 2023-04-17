@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgendaContactosXamarinSJ.PaginaContactos"
+             Title="Agenda">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="+"
+                     Clicked="OnNoteAddedClicked" />
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+    <SearchBar Placeholder="Buscar..."
+               />
+    <ListView x:Name="listView"
+              Header="Mis contactos"
+              Margin="20"
+              ItemSelected="OnListViewItemSelected"
+              >
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <TextCell Text="{Binding Nombre}"/>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+        </StackLayout>
+</ContentPage>

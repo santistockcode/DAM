@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AgendaContactosXamarinSJ.PaginaEcrituraContacto"
+             Title="Contacto">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="StartAndExpand"  Padding="20, 20, 20, 20">
+            <StackLayout Orientation="Horizontal">
+                <Switch x:Name="editSwitch" />
+                <Label Text="Editar" FontSize="10" VerticalOptions="Center"/>
+            </StackLayout>
+            <Editor Placeholder="Nombre Completo"
+                Text="{Binding Nombre}"
+                    IsReadOnly="True"
+                    IsSpellCheckEnabled="False">
+                <Editor.Triggers>
+                <DataTrigger TargetType="Editor"
+                         Binding="{Binding Source={x:Reference editSwitch}, Path=IsToggled}"
+                         Value="true">
+                    <Setter Property="IsReadOnly"
+                            Value="False" />
+                </DataTrigger>
+            </Editor.Triggers>
+            </Editor>
+            <Editor x:Name="entryPhoneNumber"
+                Placeholder="Teléfono"
+                Text="{Binding Telefono}"
+                    IsReadOnly="True"
+                    Keyboard="Numeric">
+                <Editor.Triggers>
+                <DataTrigger TargetType="Editor"
+                         Binding="{Binding Source={x:Reference editSwitch}, Path=IsToggled}"
+                         Value="true">
+                    <Setter Property="IsReadOnly"
+                            Value="False" />
+                </DataTrigger>
+            </Editor.Triggers>
+            </Editor> 
+            <Editor
+                x:Name="entryEmail"
+                Placeholder="Email"
+                Text="{Binding E_mail}"
+                    IsReadOnly="True"
+                    IsSpellCheckEnabled="False">
+                <Editor.Triggers>
+                <DataTrigger TargetType="Editor"
+                         Binding="{Binding Source={x:Reference editSwitch}, Path=IsToggled}"
+                         Value="true">
+                    <Setter Property="IsReadOnly"
+                            Value="False" />
+                </DataTrigger>
+            </Editor.Triggers>
+                </Editor>
+            <StackLayout Orientation="Horizontal"
+                        HorizontalOptions="Start"
+                         VerticalOptions="CenterAndExpand"
+                         >
+            <ImageButton Source="outline_email_black.png"   
+                    HorizontalOptions="FillAndExpand"   
+                    Clicked="ButtonMailClicked"  
+                    Grid.Row="5" Grid.Column="0"></ImageButton>
+            <ImageButton Source="outline_phone_black.png"    
+                HorizontalOptions="FillAndExpand"   
+                Clicked="ButtonCallClicked"  
+                Grid.Row="3" Grid.Column="0"></ImageButton>
+                </StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="Guardar"
+                    Clicked="OnSaveButtonClicked" />
+                <Button Grid.Column="1"
+                    Text="Eliminar"
+                    Clicked="OnDeleteButtonClicked"/>
+            </Grid>
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

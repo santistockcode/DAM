@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "W6/DUtdEwTI7/91L08uyVssaEhkFPLaOD9S0UPBun8pjE3GHU5XW9JqfI11SLZEogmixFRUSv+ykqiqH5vb1KQ==",
+  "success": true,
+  "projectFilePath": "/Users/santi/Projects/JuegoMemoria_SAS/JuegoMemoria_SAS/JuegoMemoria_SAS/JuegoMemoria_SAS.csproj",
+  "expectedPackageFiles": [
+    "/Users/santi/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/santi/.nuget/packages/microsoft.netcore.targets/1.1.0/microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "/Users/santi/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/santi/.nuget/packages/system.componentmodel/4.3.0/system.componentmodel.4.3.0.nupkg.sha512",
+    "/Users/santi/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/santi/.nuget/packages/system.runtime/4.3.0/system.runtime.4.3.0.nupkg.sha512",
+    "/Users/santi/.nuget/packages/xamarin.essentials/1.7.0/xamarin.essentials.1.7.0.nupkg.sha512",
+    "/Users/santi/.nuget/packages/xamarin.forms/5.0.0.2196/xamarin.forms.5.0.0.2196.nupkg.sha512",
+    "/Users/santi/.nuget/packages/xamarin.forms.pancakeview/2.3.0.759/xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
+  ],
+  "logs": []
+}

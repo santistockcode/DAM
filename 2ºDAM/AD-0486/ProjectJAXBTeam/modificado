@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<team>
+    <player>
+        <name>Juan Garcia</name>
+        <points>8</points>
+    </player>
+    <player>
+        <name>Jose Lopez</name>
+        <points>15</points>
+    </player>
+    <player>
+        <name>John Smith</name>
+        <points>14</points>
+    </player>
+    <player>
+        <name>Paul King</name>
+        <points>20</points>
+    </player>
+    <player>
+        <name>Alberto Sanchez</name>
+        <points>5</points>
+    </player>
+    <player>
+        <name>Pedro Navaja</name>
+        <points>1</points>
+    </player>
+</team>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<team xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Team.xsd">
+    <player>
+        <name>Juan Garcia</name>
+        <points>8</points>
+    </player>
+    <player>
+        <name>Jose Lopez</name>
+        <points>15</points>
+    </player>
+    <player>
+        <name>John Smith</name>
+        <points>14</points>
+    </player>
+    <player>
+        <name>Paul King</name>
+        <points>20</points>
+    </player>
+    <player>
+        <name>Alberto Sanchez</name>
+        <points>5</points>
+    </player>
+</team>

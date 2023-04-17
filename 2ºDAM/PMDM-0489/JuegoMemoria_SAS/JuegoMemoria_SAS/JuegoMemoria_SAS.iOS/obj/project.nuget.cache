@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "RGSB1wV7eqpEl60uTF2l97PUOk0lo2g6GQ1ve0ENgnF7+hkK2JLbj8+6RtescarHyH66lnkGaPtZWG55tbUJ1A==",
+  "success": true,
+  "projectFilePath": "/Users/santi/Projects/JuegoMemoria_SAS/JuegoMemoria_SAS/JuegoMemoria_SAS.iOS/JuegoMemoria_SAS.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/santi/.nuget/packages/system.componentmodel/4.3.0/system.componentmodel.4.3.0.nupkg.sha512",
+    "/Users/santi/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/santi/.nuget/packages/xamarin.essentials/1.7.0/xamarin.essentials.1.7.0.nupkg.sha512",
+    "/Users/santi/.nuget/packages/xamarin.forms/5.0.0.2196/xamarin.forms.5.0.0.2196.nupkg.sha512",
+    "/Users/santi/.nuget/packages/xamarin.forms.pancakeview/2.3.0.759/xamarin.forms.pancakeview.2.3.0.759.nupkg.sha512"
+  ],
+  "logs": []
+}

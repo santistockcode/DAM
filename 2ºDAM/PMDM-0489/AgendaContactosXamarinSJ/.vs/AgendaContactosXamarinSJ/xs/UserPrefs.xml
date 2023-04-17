@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{6F798A4E-16D7-417C-B574-2E9E36086110}|Default">
+  <MonoDevelop.Ide.ItemProperties.AgendaContactosXamarinSJ.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.1577BA6A-9E48-490C-A697-A44C76DBE667" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AgendaContactosXamarinSJ" expanded="True">
+            <Node name="AgendaContactosXamarinSJ" expanded="True">
+              <Node name="Modelos" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="AppShell.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+              <Node name="PaginaContactos.xaml" expanded="True" />
+              <Node name="PaginaEscrituraContacto.xaml" expanded="True" selected="True" />
+            </Node>
+            <Node name="AgendaContactosXamarinSJ.Android" expanded="True">
+              <Node name="Resources" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.AgendaContactosXamarinSJ.Android FirstBuild="True" PreferredExecutionTarget="Android.Nexus_7_API_25" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Nexus_7_API_25" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MultiItemStartupConfigurations />
+</Properties>

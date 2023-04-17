@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{5AF72668-20CE-4AB8-BF25-49877F9BFA8F}|Default">
+  <MonoDevelop.Ide.ItemProperties.JuegoMemoria__SAS.iOS FirstBuild="True" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.53F9E85E-6349-413C-99C0-D9F311EA6962" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="JuegoMemoria_SAS/JuegoMemoria_SAS/MainPage.xaml.cs">
+    <Files>
+      <File FileName="JuegoMemoria_SAS/JuegoMemoria_SAS/MainPage.xaml.cs" Line="103" Column="1" />
+      <File FileName="JuegoMemoria_SAS/JuegoMemoria_SAS/MainPage.xaml" Line="19" Column="32" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="JuegoMemoria_SAS" expanded="True">
+            <Node name="JuegoMemoria_SAS" expanded="True">
+              <Node name="imagenes" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.JuegoMemoria__SAS.Android PreferredExecutionTarget="Android.AE8P5PVC6D9S6HA6" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.Nexus_7_API_25" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MultiItemStartupConfigurations />
+</Properties>

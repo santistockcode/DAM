@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<transport xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="transport.xsd">
+    	
+    <train type="AVE">
+                
+        <id>AMS01</id>
+                
+        <origin>Madrid Atocha</origin>
+                
+        <destination>Sevilla Santa Justa</destination>
+                
+        <departure>9:00</departure>
+        		
+        <arrival>12:00</arrival>
+        		
+        <price>60.90</price>
+        		
+	
+    </train>
+        
+    <train type="AVE">
+                
+        <id>AMA01</id>
+                
+        <origin>Madrid Atocha</origin>
+                
+        <destination>Albacete Los Llanos</destination>
+                
+        <departure>10:30</departure>
+        		
+        <arrival>12:30</arrival>
+        		
+        <price>35.90</price>
+        		
+	
+    </train>
+        
+    <train type="AVE">
+                
+        <id>AMS02</id>
+                
+        <origin>Madrid Atocha</origin>
+                
+        <destination>Sevilla Santa Justa</destination>
+                
+        <departure>15:00</departure>
+        		
+        <arrival>18:00</arrival>
+        		
+        <price>62.50</price>
+        		
+	
+    </train>
+        
+    <train type="AVE">
+                
+        <id>AMB01</id>
+                
+        <origin>Madrid Atocha</origin>
+                
+        <destination>Barcelona Sants</destination>
+                
+        <departure>19:00</departure>
+        		
+        <arrival>23:30</arrival>
+        		
+        <price>75.00</price>
+            
+    </train>
+        
+    <train type="AVE">
+                
+        <id>AMS03</id>
+                
+        <origin>Madrid Atocha</origin>
+                
+        <destination>Sevilla Santa Justa</destination>
+                
+        <departure>9:00</departure>
+        		
+        <arrival>12:00</arrival>
+        		
+        <price>60.90</price>
+        		
+	
+    </train>
+        
+    <train type="Alvia">
+                
+        <id>LMA02</id>
+                
+        <origin>Madrid Atocha</origin>
+                
+        <destination>Albacete Los Llanos</destination>
+                
+        <departure>10:30</departure>
+        		
+        <arrival>12:30</arrival>
+        		
+        <price>35.90</price>
+        		
+	
+    </train>
+        
+    <train type="Alvia">
+                
+        <id>LAV01</id>
+                
+        <origin>Albacete Los Llanos</origin>
+                
+        <destination>Valencia</destination>
+                
+        <departure>12:40</departure>
+        		
+        <arrival>14:30</arrival>
+        		
+        <price>25.15</price>
+        		
+	
+    </train>
+        
+    <train type="Alvia">
+                
+        <id>LAM01</id>
+                
+        <origin>Albacete Los Llanos</origin>
+                
+        <destination>Madrid Atocha</destination>
+                
+        <departure>10:40</departure>
+        		
+        <arrival>12:30</arrival>
+        		
+        <price>27.45</price>
+        		
+	
+    </train>
+        
+
+    <train type="Alvia">
+        <id>KIX38</id>
+        <origin>Moratalaz</origin>
+        <destination>Gandía</destination>
+        <departure>10:80</departure>
+        <arrival>20:35</arrival>
+        <price>3.4</price>
+    </train>
+</transport>

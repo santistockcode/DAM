@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JuegoMemoria_SAS.MainPage"
+             xmlns:local="clr-namespace:JuegoMemoria_SAS"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView">
+    <StackLayout
+        VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand"
+        Padding="10,0">
+        <Frame HasShadow="True" HorizontalOptions="Center" VerticalOptions="Start" Margin="30">
+            <Label Text="Animaciones en botones para juego de memoria" FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+               Padding="2"/>
+        </Frame>
+        <Grid>
+        <Grid RowDefinitions="Auto,Auto,Auto"
+              ColumnDefinitions="Auto,Auto"
+              ColumnSpacing="20"
+              RowSpacing="60"
+              HorizontalOptions="CenterAndExpand"
+              VerticalOptions="CenterAndExpand"
+              >
+            <Grid Grid.Row="0" Grid.Column="0">
+                <Grid HorizontalOptions="Center">
+            <Grid x:Name="FrontView_imagen1">
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Voltear"/>
+                </Grid.GestureRecognizers>
+                <yummy:PancakeView
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    CornerRadius="10,10,10,10"
+                    BackgroundColor="MediumPurple"
+                    >
+                    <Image
+                        x:Name="Fimagen1">
+                    </Image>
+                    </yummy:PancakeView>
+            </Grid>
+            <Grid x:Name="BackView_imagen1"
+                IsVisible="false">
+                <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Vuelta"/>
+                </Grid.GestureRecognizers>
+                <yummy:PancakeView
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    CornerRadius="10,10,10,10"
+                    BackgroundColor="Gold"
+                    >
+                        <Image
+                            x:Name="Bimagen1"
+                            RotationY="180">
+                        </Image>
+                 </yummy:PancakeView>
+            </Grid>
+            </Grid>
+                </Grid>
+
+            <Grid Grid.Row="0" Grid.Column="1">
+                <Label Text="Voltear casilla"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Start"></Label>
+            </Grid>
+
+            <Grid Grid.Row="1" Grid.Column="0">
+                <Grid ColumnDefinitions="Auto,Auto">
+                    <Grid Grid.Column="0" x:Name="FrontView_imagen2_a">
+                        <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Voltear2_a"/>
+                </Grid.GestureRecognizers>
+                <yummy:PancakeView
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    CornerRadius="10,10,10,10"
+                    BackgroundColor="MediumPurple"
+                    >
+                    <Image
+                        x:Name="Fimagen2_a">
+                    </Image>
+                    </yummy:PancakeView>
+                    </Grid>
+                    <Grid Grid.Column="0" x:Name="BackView_imagen2_a" IsVisible="false">
+                        <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Vuelta2_a"/>
+                </Grid.GestureRecognizers>
+                <yummy:PancakeView
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    CornerRadius="10,10,10,10"
+                    BackgroundColor="Gold"
+                    >
+            <Image
+                x:Name="Bimagen2_a"
+                RotationY="180">
+            </Image>
+                    </yummy:PancakeView>
+                    </Grid>
+                    <Grid Grid.Column="1" x:Name="FrontView_imagen2_b">
+                        <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Voltear2_b"/>
+                </Grid.GestureRecognizers>
+                <yummy:PancakeView
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    CornerRadius="10,10,10,10"
+                    BackgroundColor="MediumPurple"
+                    >
+                    <Image
+                        x:Name="Fimagen2_b">
+                    </Image>
+                    </yummy:PancakeView>
+                    </Grid>
+                    <Grid Grid.Column="1" x:Name="BackView_imagen2_b" IsVisible="false">
+                        <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Vuelta2_b"/>
+                </Grid.GestureRecognizers>
+                <yummy:PancakeView
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    CornerRadius="10,10,10,10"
+                    BackgroundColor="OrangeRed"
+                    >
+            <Image
+                x:Name="Bimagen2_b"
+                RotationY="180">
+            </Image>
+                    </yummy:PancakeView>
+                    </Grid>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="1" Grid.Column="1">
+                <Label Text="Fallo"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Start"></Label>
+            </Grid>
+
+            <Grid Grid.Row="2" Grid.Column="0">
+                <Grid ColumnDefinitions="Auto,Auto">
+                    <Grid Grid.Column="0" x:Name="FrontView_imagen3_a">
+                        <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Voltear3_a"/>
+                </Grid.GestureRecognizers>
+                <yummy:PancakeView
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    CornerRadius="10,10,10,10"
+                    BackgroundColor="MediumPurple"
+                    >
+                    <Image
+                        x:Name="Fimagen3_a">
+                    </Image>
+                    </yummy:PancakeView>
+                    </Grid>
+                    <Grid Grid.Column="0" x:Name="BackView_imagen3_a" IsVisible="false">
+                        <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Vuelta3_a"/>
+                </Grid.GestureRecognizers>
+                <yummy:PancakeView
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    CornerRadius="10,10,10,10"
+                    BackgroundColor="LightGreen"
+                    >
+            <Image
+                x:Name="Bimagen3_a"
+                RotationY="180">
+            </Image>
+                    </yummy:PancakeView>
+                    </Grid>
+                    <Grid Grid.Column="1" x:Name="FrontView_imagen3_b">
+                        <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Voltear3_b"/>
+                </Grid.GestureRecognizers>
+                <yummy:PancakeView
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    CornerRadius="10,10,10,10"
+                    BackgroundColor="MediumPurple"
+                    >
+                    <Image
+                        x:Name="Fimagen3_b">
+                    </Image>
+                    </yummy:PancakeView>
+                    </Grid>
+                    <Grid Grid.Column="1" x:Name="BackView_imagen3_b" IsVisible="false">
+                        <Grid.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Vuelta3_b"/>
+                </Grid.GestureRecognizers>
+                <yummy:PancakeView
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    CornerRadius="10,10,10,10"
+                    BackgroundColor="LightGreen"
+                    >
+            <Image
+                x:Name="Bimagen3_b"
+                RotationY="180">
+            </Image>
+                    </yummy:PancakeView>
+                    </Grid>
+                </Grid>
+            </Grid>
+
+            <Grid Grid.Row="2" Grid.Column="1">
+                <Label Text="Acierto"
+                       VerticalTextAlignment="Center"
+                       HorizontalTextAlignment="Start"></Label>
+            </Grid>
+
+            </Grid>
+        </Grid>
+
+
+    </StackLayout>
+    
+
+</ContentPage>
+

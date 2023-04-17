@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Ficusing</string>
+    <string name="title_plant_hint">NAME YOUR PLANT</string>
+    <string name="frequency_picker_text1">EVERY</string>
+    <string name="frequency_picker_text2">DAYS</string>
+    <string name="about_plant_hint">ABOUT</string>
+    <string name="title_watering">WATER</string>
+    <string name="time_picker">NOTIFICATION</string>
+    <string name="delete_plant">DELETE</string>
+    <string name="new_plant">ADD</string>
+    <string name="no_plants">Add your first plant!</string>
+    <string name="addNew">addNew</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="confirm">Confirm</string>
+    <string name="message_not">"Following plants in need: "</string>
+    <string name="plant_deleted">Deleted</string>
+</resources>

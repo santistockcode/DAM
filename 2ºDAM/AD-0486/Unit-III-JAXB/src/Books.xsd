@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="Book">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Title"/>
+				<xs:element ref="Author"/>
+			</xs:sequence>
+			<xs:attribute name="published" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Title" type="xs:string"/>
+	<xs:element name="Author" type="xs:string"/>
+	<xs:element name="Books">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Book" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
